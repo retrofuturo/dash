@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Template</title>
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="css/myfont.css">
+
+    <!-- jQuery css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- HEADER START -->
+<header class="fixed-to-top header">
+    <div class="flex-container justify-flex-end">
+        <div class="user-control flex-container">
+            <div class="header-section dropdown-wrap">
+                <span class="icon icon-wallet"></span>
+                <span class="gone-in-min-width">
+                    <span>$1500</span>
+                    <span class="icon icon-arrow-down"></span>
+                </span>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-section">
+                <div class="icon icon-notification">
+                    <div class="status notification"></div>
+                </div>
+            </div>
+            <div class="header-section">
+                <span class="icon icon-profile"></span>
+                <span class="gone-in-min-width">
+                    <a href="" class="link">Leonardo Dicaprio</a>
+                </span>
+            </div>
+            <div class="header-section">
+                <a href="" class="icon icon-quit"></a>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!-- HEADER END -->
+
+<!-- ASIDE START -->
+<aside class="aside fixed-to-top">
+    <div class="menu-control flex-container align-items-center justify-content-sb">
+        <div class="logo">
+            <a href="">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="aside-menu">
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <span class="text-center icon icon-general"></span>
+                    <span class="menu-link">General</span>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <span class="text-center icon icon-details"></span>
+                    <span class="menu-link">Details</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text-center icon icon-links"></span>
+                    <span class="menu-link">Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text-center icon icon-banners"></span>
+                    <span class="menu-link">Banners</span>
+                </a>
+            </li>
+            <li>
+                <a href="personal-data.html">
+                    <span class="text-center icon icon-personaldata"></span>
+                    <span class="menu-link">Personal data</span>
+                </a>
+            </li>
+            <li>
+                <a href="payout.html">
+                    <span class="text-center icon icon-payout"></span>
+                    <span class="menu-link">Payout</span>
+                </a>
+            </li>
+            <li>
+                <a href="postback.html">
+                    <span class="text-center icon icon-postback"></span>
+                    <span class="menu-link">Postback</span>
+                </a>
+            </li>
+        </ul>
+        <div class="your-manager">
+            <h3 class="page-title small-title">Your manager</h3>
+            <div class="manager-info flex-container align-items-center">
+                <div class="manager-photo">
+                    <img src="img/manager-img.png" alt="">
+                    <div class="status online"></div>
+                </div>
+                <a href="" class="link">Mikhael E.</a>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- ASIDE END -->
+
+<main>
+    <div class="content-wrapper">
+        <div class="panel">
+            <div class="panel-header">
+                <h3 class="page-title">General statistics</h3>
+            </div>
+            <div class="panel-date">
+                <form class="datepicker-form">
+                    <div class="date-input-wrap">
+                        <input type="text" id="from" name="from" class="date-control">
+                        <input type="text" id="to" name="to" class="date-control">
+                    </div>
+                    <button class="btn btn-action btn-square"><span class="icon icon-refresh"></span></button>
+                </form>
+            </div>
+            <div class="panel-body">
+                <div class="container-sm flex-container table-wrapper">
+                    <div class="general-table">
+                        <div class="general-table-section flex-container">
+                            <div class="section-title">Visit Signups</div>
+                            <span>124</span>
+                        </div>
+                        <div class="general-table-section flex-container">
+                            <div class="section-title">Visit Signups</div>
+                            <span>124</span>
+                        </div>
+                    </div>
+                    <div class="general-table">
+                        <div class="general-table-section flex-container">
+                            <div class="section-title">Visit Signups</div>
+                            <span>124</span>
+                        </div>
+                        <div class="general-table-section flex-container">
+                            <div class="section-title">Visit Signups</div>
+                            <span>124</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container-sm">
+                    <div class="section-title">
+                        <span>Earnings chart</span>
+                    </div>
+                    <div class="chart-wrap">
+                        <canvas id="myChart" width="600" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel links">
+            <div class="panel-header">
+                <h3 class="page-title">Links</h3>
+            </div>
+            <div class="panel-body">
+                <div class="btn-row text-center">
+                    <a href="" class="btn btn-action" data-modal="#add-links-modal">add new</a>
+                </div>
+                <div class="container-sm">
+                    <table class="table full-width">
+                        <tr>
+                            <td class="text-bold td-title">Home page</td>
+                            <td><a href="" class="link large-link">http://www.homepage.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Currently offer</td>
+                            <td><a href="" class="link large-link">http://www.currently.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Blurpix</td>
+                            <td><a href="" class="link large-link">http://www.blurpix.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Your Site</td>
+                            <td><a href="" class="link large-link">http://www.yoursite.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Google</td>
+                            <td><a href="" class="link large-link">http://www.google.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Facebook</td>
+                            <td><a href="" class="link large-link">http://www.facebook.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Dashboard</td>
+                            <td><a href="" class="link large-link">http://www.dashboard.com</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btn-row text-center">
+                    <a href="" class="btn btn-action" data-modal="#add-links-modal">add new</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- MODAL -->
+<div class="modal" id="add-links-modal">
+    <div class="modal-header">
+        <h3 class="page-title">Add url</h3>
+    </div>
+    <div class="modal-body">
+        <div class="modal-section">
+            <div class="modal-row">
+                <div class="modal-column size-large">
+                    <h3 class="section-title">Scheme name</h3>
+                    <form>
+                        <input type="text" class="form-control" placeholder="Name">
+                    </form>
+                </div>
+                <div class="modal-column size-large">
+                    <h3 class="section-title">Design</h3>
+                    <form>
+                        <select name="" id="">
+                            <option value="1">Select</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="modal-column size-small">
+                    <h3 class="section-title">Language</h3>
+                    <input type="select" class="form-control" placeholder="Name">
+                </div>
+            </div>
+        </div>
+        <div class="checkbox-wrap">
+            <h3 class="section-title">Select websites</h3>
+            <div class="checkboxes">
+                <div class="flex-container scrollbar-inner">
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link1">
+                        <label for="link1" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link2" id="link2">
+                        <label for="link2" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link3" id="link3">
+                        <label for="link3" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link4" id="link4">
+                        <label for="link4" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link5" id="link5">
+                        <label for="link5" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link6" id="link6">
+                        <label for="link6" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link7" id="link7">
+                        <label for="link7" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link8" id="link8">
+                        <label for="link8" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link9" id="link9">
+                        <label for="link9" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link10" id="link10">
+                        <label for="link10" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link11" id="link11">
+                        <label for="link11" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link12" id="link12">
+                        <label for="link12" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link13" id="link13">
+                        <label for="link13" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link14" id="link14">
+                        <label for="link14" class="flex-container align-items-center">Landing page</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <form class="flex-container align-items-center generate-links-form">
+            <input type="text" class="form-control" placeholder="Generate link">
+            <button class="btn btn-disabled">Copy link</button>
+            <button class="btn btn-action">Save</button>
+        </form>
+    </div>
+</div>
+
+<!-- Loader -->
+
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object"></div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+
+<!-- Init plugin -->
+<script src="js/init.js"></script>
+
+<!-- Plugin -->
+<script src="js/plugins.min.js"></script>
+</body>
+</html>

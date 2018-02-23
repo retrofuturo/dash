@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Template</title>
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="css/myfont.css">
+
+    <!-- jQuery css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- HEADER START -->
+<header class="fixed-to-top header">
+    <div class="flex-container justify-flex-end">
+        <div class="user-control flex-container">
+            <div class="header-section dropdown-wrap">
+                <span class="icon icon-wallet"></span>
+                <span class="gone-in-min-width">
+                    <span>$1500</span>
+                    <span class="icon icon-arrow-down"></span>
+                </span>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-section">
+                <div class="icon icon-notification">
+                    <div class="status notification"></div>
+                </div>
+            </div>
+            <div class="header-section">
+                <span class="icon icon-profile"></span>
+                <span class="gone-in-min-width">
+                    <a href="" class="link">Leonardo Dicaprio</a>
+                </span>
+            </div>
+            <div class="header-section">
+                <a href="" class="icon icon-quit"></a>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!-- HEADER END -->
+
+<!-- ASIDE START -->
+<aside class="aside fixed-to-top">
+    <div class="menu-control flex-container align-items-center justify-content-sb">
+        <div class="logo">
+            <a href="">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="aside-menu">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span class="text-center icon icon-general"></span>
+                    <span class="menu-link">General</span>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <span class="text-center icon icon-details"></span>
+                    <span class="menu-link">Details</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text-center icon icon-links"></span>
+                    <span class="menu-link">Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text-center icon icon-banners"></span>
+                    <span class="menu-link">Banners</span>
+                </a>
+            </li>
+            <li>
+                <a href="personal-data.html">
+                    <span class="text-center icon icon-personaldata"></span>
+                    <span class="menu-link">Personal data</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="payout.html">
+                    <span class="text-center icon icon-payout"></span>
+                    <span class="menu-link">Payout</span>
+                </a>
+            </li>
+            <li>
+                <a href="postback.html">
+                    <span class="text-center icon icon-postback"></span>
+                    <span class="menu-link">Postback</span>
+                </a>
+            </li>
+        </ul>
+        <div class="your-manager">
+            <h3 class="page-title small-title">Your manager</h3>
+            <div class="manager-info flex-container align-items-center">
+                <div class="manager-photo">
+                    <img src="img/manager-img.png" alt="">
+                    <div class="status online"></div>
+                </div>
+                <a href="" class="link">Mikhael E.</a>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- ASIDE END -->
+
+<main>
+    <div class="content-wrapper">
+        <div class="panel">
+            <div class="panel-header">
+                <h3 class="page-title">Payout history</h3>
+            </div>
+            <div class="panel-date">
+                <form class="datepicker-form">
+                    <div class="date-input-wrap">
+                        <input type="text" id="from" name="from" class="date-control">
+                        <input type="text" id="to" name="to" class="date-control">
+                    </div>
+                    <button class="btn btn-action btn-square"><span class="icon icon-refresh"></span></button>
+                </form>
+            </div>
+            <div class="panel-section">
+                <div class="table-wrap">
+                    <table class="table payout">
+                        <thead>
+                        <tr>
+                            <th>
+                                <span class="table-sort">Date <span class="icon icon-arrow-down"></span></span>
+                            </th>
+                            <th>
+                                <span class="table-sort">Amount ($) <span class="icon icon-arrow-down"></span></span>
+                            </th>
+                            <th>
+                                <span class="table-sort">Deal <span class="icon icon-arrow-down"></span></span>
+                            </th>
+                            <th>
+                                <span class="table-sort">Account <span class="icon icon-arrow-down"></span></span>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="cell">17/08/02 (12:58)</td>
+                            <td class="cell">34,425.00</td>
+                            <td class="cell">cpl (200)</td>
+                            <td class="cell">bank</td>
+                        </tr>
+                        <tr>
+                            <td class="cell">17/08/02 (12:58)</td>
+                            <td class="cell">34,425.00</td>
+                            <td class="cell">cpl (200)</td>
+                            <td class="cell">bank</td>
+                        </tr>
+                        <tr>
+                            <td class="cell">17/08/02 (12:58)</td>
+                            <td class="cell">34,425.00</td>
+                            <td class="cell">cpl (200)</td>
+                            <td class="cell">bank</td>
+                        </tr>
+                        <tr>
+                            <td class="cell">17/08/02 (12:58)</td>
+                            <td class="cell">34,425.00</td>
+                            <td class="cell">cpl (200)</td>
+                            <td class="cell">bank</td>
+                        </tr>
+                        <tr>
+                            <td class="cell">17/08/02 (12:58)</td>
+                            <td class="cell">34,425.00</td>
+                            <td class="cell">cpl (200)</td>
+                            <td class="cell">bank</td>
+                        </tr>
+                        <tr>
+                            <td class="cell">17/08/02 (12:58)</td>
+                            <td class="cell">34,425.00</td>
+                            <td class="cell">cpl (200)</td>
+                            <td class="cell">bank</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ul class="pagination flex-container align-items-center">
+                    <li class="arrow"><span class="icon icon-arrow-left"></span></li>
+                    <li class="active"><a href=""class="link large-link">1</a></li>
+                    <li><a href=""class="link large-link">2</a></li>
+                    <li><a href=""class="link large-link">3</a></li>
+                    <li class="gone-on-medium"><a href=""class="link large-link">4</a></li>
+                    <li class="gone-on-medium"><a href=""class="link large-link">5</a></li>
+                    <li class="gone-on-medium"><a href=""class="link large-link">6</a></li>
+                    <li class="gone-on-medium"><a href=""class="link large-link">7</a></li>
+                    <li class="gone-on-medium"><a href=""class="link large-link">8</a></li>
+                    <li class="gone-on-medium"><a href=""class="link large-link">9</a></li>
+                    <li class="arrow"><span class="icon icon-arrow-right"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Loader -->
+
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object"></div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+
+<!-- Init plugin -->
+<script src="js/init.js"></script>
+
+<!-- Plugin -->
+<script src="js/plugins.min.js"></script>
+</body>
+</html>

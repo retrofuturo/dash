@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Template</title>
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="css/myfont.css">
+
+    <!-- jQuery css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- HEADER START -->
+<header class="fixed-to-top header">
+    <div class="flex-container justify-flex-end">
+        <div class="user-control flex-container">
+            <div class="header-section dropdown-wrap">
+                <span class="icon icon-wallet"></span>
+                <span class="gone-in-min-width">
+                    <span>$1500</span>
+                    <span class="icon icon-arrow-down"></span>
+                </span>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-section">
+                <div class="icon icon-notification">
+                    <div class="status notification"></div>
+                </div>
+            </div>
+            <div class="header-section">
+                <span class="icon icon-profile"></span>
+                <span class="gone-in-min-width">
+                    <a href="" class="link">Leonardo Dicaprio</a>
+                </span>
+            </div>
+            <div class="header-section">
+                <a href="" class="icon icon-quit"></a>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!-- HEADER END -->
+
+<!-- ASIDE START -->
+<aside class="aside fixed-to-top">
+    <div class="menu-control flex-container align-items-center justify-content-sb">
+        <div class="logo">
+            <a href="">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="aside-menu">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span class="text-center icon icon-general"></span>
+                    <span class="menu-link">General</span>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <span class="text-center icon icon-details"></span>
+                    <span class="menu-link">Details</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text-center icon icon-links"></span>
+                    <span class="menu-link">Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text-center icon icon-banners"></span>
+                    <span class="menu-link">Banners</span>
+                </a>
+            </li>
+            <li>
+                <a href="personal-data.html">
+                    <span class="text-center icon icon-personaldata"></span>
+                    <span class="menu-link">Personal data</span>
+                </a>
+            </li>
+            <li>
+                <a href="payout.html">
+                    <span class="text-center icon icon-payout"></span>
+                    <span class="menu-link">Payout</span>
+                </a>
+            </li>
+            <li  class="active">
+                <a href="postback.html">
+                    <span class="text-center icon icon-postback"></span>
+                    <span class="menu-link">Postback</span>
+                </a>
+            </li>
+        </ul>
+        <div class="your-manager">
+            <h3 class="page-title small-title">Your manager</h3>
+            <div class="manager-info flex-container align-items-center">
+                <div class="manager-photo">
+                    <img src="img/manager-img.png" alt="">
+                    <div class="status online"></div>
+                </div>
+                <a href="" class="link">Mikhael E.</a>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- ASIDE END -->
+
+<main>
+    <div class="content-wrapper">
+        <div class="panel postback">
+            <div class="panel-header">
+                <h3 class="page-title">New postback</h3>
+            </div>
+            <div class="panel-section">
+                <span>You can insert some parameters in this postback:</span>
+                <div class="flex-container double-section">
+                    <div class="panel-col half">
+                        <h3 class="section-title">Signup</h3>
+                        <textarea name="TA1" id="TA1" class="form-control textarea">some text</textarea>
+                    </div>
+                    <div class="panel-col half">
+                        <h3 class="section-title">Deposit</h3>
+                        <textarea name="TA2" id="TA2" class="form-control textarea">some text</textarea>
+                    </div>
+                </div>
+                <div class="flex-container triple-section">
+                    <div class="panel-col third">
+                        <h3 class="section-title">Postback type</h3>
+                        <form>
+                            <select name="" id="">
+                                <option value="1">S2S (http://..)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="panel-col third">
+                        <h3 class="section-title">To countries</h3>
+                        <form>
+                            <select name="" id="">
+                                <option value="1">Select countries</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="panel-col third">
+                        <h3 class="section-title">Sending options</h3>
+                        <form>
+                            <select name="" id="">
+                                <option value="1">Select</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-section no-padding">
+                <div class="flex-container double-section">
+                    <div class="half-section border-right">
+                        <h3 class="section-title"><span class="color-red">NOT</span> send statuses</h3>
+                        <div class="scrollbar-inner not-send-checkboxes">
+                                <div class="checkbox-group flex-container align-items-center">
+                                    <input type="checkbox" name="number" id="number">
+                                    <label for="number" class="flex-container align-items-center">checkNumber</label>
+                                </div>
+                                <div class="checkbox-group flex-container align-items-center">
+                                    <input type="checkbox" name="noAnswer" id="noAnswer">
+                                    <label for="noAnswer" class="flex-container align-items-center">noAnswer</label>
+                                </div>
+                                <div class="checkbox-group flex-container align-items-center">
+                                    <input type="checkbox" name="noCall" id="noCall">
+                                    <label for="noCall" class="flex-container align-items-center">noCall</label>
+                                </div>
+                                <div class="checkbox-group flex-container align-items-center">
+                                    <input type="checkbox" name="callAgain" id="callAgain">
+                                    <label for="callAgain" class="flex-container align-items-center">callAgain</label>
+                                </div>
+                                <div class="checkbox-group flex-container align-items-center">
+                                    <input type="checkbox" name="noWrite" id="noWrite">
+                                    <label for="noWrite" class="flex-container align-items-center">noWrite</label>
+                                </div>
+                                <div class="checkbox-group flex-container align-items-center">
+                                    <input type="checkbox" name="sendNotifications" id="sendNotifications">
+                                    <label for="sendNotifications" class="flex-container align-items-center">sendNotifications</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="half-section">
+                        <h3 class="section-title">Send after</h3>
+                        <div class="range-slider-wrap">
+                            <div class="flex-container justify-content-sb range-values">
+                                <span>0</span>
+                                <span>200</span>
+                            </div>
+                            <div id="slider">
+                                <div id="custom-handle" class="ui-slider-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-section">
+                <div class="flex-container justify-flex-end">
+                    <button class="btn btn-action">Create Pixel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+<!-- Init plugin -->
+<script src="js/init.js"></script>
+
+<!-- Plugin -->
+<script src="js/plugins.min.js"></script>
+</body>
+</html>
